@@ -17,7 +17,7 @@ app.use(cors({
     credentials: false,
     origin: ["http://localhost:5173"]
 }))
-const PORT = process.env.PORT 
+const PORT = parseInt(process.env.PORT) || 4040
 
 //router register
 // const indexRouter = require('./routes/IndexRoute')
