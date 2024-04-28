@@ -1,0 +1,45 @@
+attendance table : the idea here was just to input the attendance and it will just record.
+	id:		incremental, not needed to display.
+	status:		integer, needs to be converted to string. input as selection.
+	employee id:	integer, needs to show the employee on Admin side. else would just be the date, hours and status.
+payroll table		: records of payroll.
+	id:		incremental, not needed to display.
+	ref_no:		string, display it as typography. input in a form
+	nominal:	string, display it as typography. input in a form
+	start:		string, display it as typography. for input it needs to have a date picker.
+	end:		same as -start-.
+	employee id:	integer, display it with a link to the employee in a card. no need to show it to the employee.
+relatives table
+	id:		incremental, not needed to be displayed.
+	nama:		string, display it as typography. input it in a form
+	alamat:		string, display it as typography. input it in a form
+	phone:		string, display it as typography. input it in a form
+	employee id:	integer, display it with a link to the employee in a card. no need to show it to the employee.
+employees table
+	id:		incremental, not needed to be dsiplayed.
+	name:		string, display it as typography. input in in a form
+	phone: 		string, display it as typography. input it in a form
+	alamat: 	string, display it as typography. input it in a form
+	domisili:	string, display it as typography. input it in a form
+	posisi:		string, display it as typography. input it in a form
+	jabatan:	string, display it as typography. input it in a form
+	email:		string, display it as typography. input it in a form
+	password:	no need to display.
+
+Data Synthesize :
+	attendance:	display as datatable. and input as selection. for employee id input as selection with a search bar.
+	payroll:	display as datatable. input only for admin level forms.
+	relatvies:	no image detected, display as datatable. input/update with forms.
+	employee:	display as datatable. input as a form, admin only. update is allowed from the employee.
+	
+UI Breakdown	:
+	home: Employee
+		profile		: card
+		attendance	: datatable. button. selection.
+		payroll		: datatable.
+		relatives	: datatable. button. forms
+	home: Admin
+		employees	: datatable. card. forms. button.
+		attendances	: datatable. card. forms. button.
+		payrolls	: datatable. card. forms. button.
+		relatives	: datatable. card. forms. button.
